@@ -295,12 +295,15 @@ section {
     font-weight: 500;
 }
 
+/* Slider Container: Κάθετη διάταξη για να μπουν τα κουμπιά από κάτω */
 .about-slider-container {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+    gap: 1.5rem; /* Απόσταση μεταξύ slide και βελών */
 }
 
 .about-slides-wrapper {
@@ -327,10 +330,22 @@ section {
     transform: translateX(0);
 }
 
+/* Νέος περιέκτης για τα βελάκια κάτω από το slide */
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* Επαναφορά κουμπιών σε σχετική θέση (όχι absolute πάνω στο slide) */
 .slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
     background: var(--white);
     color: var(--primary-color);
     border: 1px solid var(--secondary-color);
@@ -351,8 +366,11 @@ section {
     color: var(--white);
 }
 
-.prev-btn { left: -60px; }
-.next-btn { right: -60px; }
+.prev-btn,
+.next-btn {
+    left: auto;
+    right: auto;
+}
 
 /* 7. ADVANTAGES SECTION */
 .advantages-section {
@@ -1629,21 +1647,49 @@ section {
    ABOUT SLIDER NAVIGATION FIX
    ========================================================================== */
 
-/* Περιέκτης για τα κουμπιά πλοήγησης */
+/* Περιέκτης για τα βελάκια: Οριζόντια τοποθέτηση (το ένα δίπλα στο άλλο) */
 .slider-controls {
     display: flex;
-    justify-content: center;
+    flex-direction: row; /* Εξασφαλίζει οριζόντια διάταξη */
     align-items: center;
-    gap: 20px;
-    margin-top: 25px;
+    justify-content: center;
+    gap: 15px; /* Απόσταση μεταξύ των δύο κουμπιών */
     width: 100%;
+    margin-top: 15px; /* Απόσταση από το slide */
 }
 
-/* Ακύρωση absolute position ώστε να ρέουν φυσιολογικά */
-.slider-controls .slider-btn {
-    position: static !important;
-    transform: none !important;
-    margin: 0 !important;
+/* Κουμπιά πλοήγησης */
+.slider-btn {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    background: var(--white);
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    font-size: 1.5rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: var(--transition);
+}
+
+.slider-btn:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Καθαρισμός παλιών absolute positions */
+.prev-btn,
+.next-btn {
+    left: auto;
+    right: auto;
 }
 
 /* Για μεγάλες οθόνες (Desktop ≥ 992px): Τα κουμπιά μπαίνουν αριστερά & δεξιά */
