@@ -1624,3 +1624,42 @@ section {
 .ai-call:hover {
     background-color: #1b5e20;
 }
+
+/* ==========================================================================
+   FIX ABOUT SLIDER FOR MOBILE (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* 1. Επαναφορά του container σε Flexbox κατακόρυφης διάταξης */
+    .about-slider-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        position: relative !important;
+    }
+
+    /* 2. Το slide πιάνει όλο το πλάτος και μπαίνει 1ο */
+    .about-slides-wrapper {
+        width: 100% !important;
+        order: 1 !important;
+    }
+
+    /* 3. Ακύρωση absolute positioning & τοποθέτηση των κουμπιών κάτω (order: 2) */
+    .about-slider-container .slider-btn {
+        position: static !important; /* Ακυρώνει το top/left/right/transform */
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 10px 0 10px !important; /* Περιθώριο από το κείμενο */
+    }
+
+    /* 4. Περιέκτης για να εμφανίζονται τα κουμπιά δίπλα-δίπλα στην ίδια σειρά */
+    .about-slider-container::after {
+        content: "";
+        display: none;
+    }
+}
