@@ -1,0 +1,8 @@
+# TEST / GitHub
+User-agent: *
+Disallow: /
+
+# PRODUCTION:
+# User-agent: *
+# Allow: /
+# Sitemap: https://pmlawoffices.gr/sitemap.xml
