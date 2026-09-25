@@ -41,7 +41,7 @@
     <meta property="og:locale" content="el_GR">
 
     <!-- Open Graph Image -->
-    <meta property="og:image" content="https://argiris-karalis.github.io/web_site_test/images/og-image.jpg">
+    <meta property="og:image" content="https://pmlawoffices.gr/images/og-image.jpg">
     <meta property="og:image:alt"
           content="PM Law Offices | Αθηνά Παριανού – Νάσος Μολδοβανίδης & Συνεργάτες">
 
@@ -95,27 +95,24 @@
     }
     </script>
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <!-- 1. HEADER & NAVIGATION -->
+    <!-- Header -->
     <header class="main-header">
         <div class="header-container">
-            <a href="#home" class="law-brand">
+            <a href="#" onclick="scrollToTop(); return false;" class="law-brand">
                 <span class="brand-name">⚖️ PM Law Offices</span>
                 <small class="brand-sub">Αθηνά Παριανού - Νάσος Μολδοβανίδης & Συνεργάτες</small>
             </a>
             
-            <!-- Mobile Hamburger Button -->
             <button class="menu-toggle" aria-label="Άνοιγμα Μενού" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
 
-            <!-- Navigation Links -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="#about" class="nav-link">Ομάδα</a></li>
@@ -125,7 +122,6 @@
                     <li><a href="#testimonials" class="nav-link">Κριτικές</a></li>
                     <li><a href="#faq" class="nav-link">Ερωτήσεις</a></li>
                     <li><a href="#contact" class="nav-link btn-nav">Επικοινωνία</a></li>
-                    <!-- Language Switcher -->
                     <li class="lang-switcher">
                         <a href="../en/index.html" title="Switch to English">
                             <img src="../images/en-flag.png" alt="English Language" class="flag-icon">
@@ -137,7 +133,7 @@
     </header>
 
     <main>
-        <!-- 2. HERO SECTION -->
+        <!-- Hero -->
         <section id="home" class="hero-section">
             <div class="hero-container">
                 <div class="hero-content">
@@ -156,7 +152,7 @@
             </div>
         </section>
 
-<!--3. ABOUT SECTION (TEAM SLIDER) -->
+        <!-- About -->
         <section id="about" class="about-section">
             <div class="container">
                 <span class="section-badge text-center" style="display:block;">Η Ομάδα μας</span>
@@ -165,7 +161,6 @@
                     
                     <div class="about-slides-wrapper">
                         
-                        <!-- LAWYER 1 (Initially Active) -->
                         <div class="about-slide active">
                             <div class="about-grid">
                                 <div class="about-image-wrapper">
@@ -182,7 +177,6 @@
                             </div>
                         </div>
 
-                        <!-- LAWYER 2 -->
                         <div class="about-slide">
                             <div class="about-grid">
                                 <div class="about-image-wrapper">
@@ -199,7 +193,6 @@
                             </div>
                         </div>
 <!--
-                        // LAWYER 3 //
                         <div class="about-slide">
                             <div class="about-grid">
                                 <div class="about-image-wrapper">
@@ -214,7 +207,6 @@
                             </div>
                         </div>
 
-                        // LAWYER 4 //
                         <div class="about-slide">
                             <div class="about-grid">
                                 <div class="about-image-wrapper">
@@ -231,7 +223,6 @@
 -->
                     </div>
 
-                    <!-- Slider Navigation Controls Wrapper -->
                     <div class="about-slider-controls">
                         <button class="slider-btn prev-btn" aria-label="Previous profile">&#10094;</button>
                         <button class="slider-btn next-btn" aria-label="Next profile">&#10095;</button>
@@ -241,7 +232,7 @@
             </div>
         </section>
 
-        <!-- 4. ADVANTAGES SECTION (BENEFITS) -->
+        <!-- Advantages -->
         <section id="advantages" class="advantages-section">
             <div class="container text-center">
                 <span class="section-badge">Γιατί εμάς</span>
@@ -270,7 +261,7 @@
             </div>
         </section>
 
-        <!--5. SERVICES SECTION -->
+        <!-- Services -->
         <section id="services" class="services-section">
             <div class="container text-center">
                 <span class="section-badge">Οι Υπηρεσίες μας</span>
@@ -311,7 +302,7 @@
             </div>
         </section>
 
-        <!-- 6. PROCESS SECTION -->
+        <!-- Process -->
         <section id="process" class="process-section">
             <div class="container">
                 <div class="text-center" style="margin-bottom: 4rem;">
@@ -342,7 +333,7 @@
             </div>
         </section>
 
-        <!-- 7. TESTIMONIALS SECTION -->
+        <!-- Reviews -->
         <section id="testimonials" class="testimonials-section">
             <div class="container">
                 <div class="text-center">
@@ -384,7 +375,7 @@
             </div>
         </section>
 
-        <!-- 8. STATS COUNTER SECTION -->
+        <!-- Stats -->
         <div class="stats-counter-section">
             <div class="container">
                 <div class="stats-counter-container">
@@ -408,7 +399,7 @@
             </div>
         </div>
 
-        <!-- 9. FAQ SECTION -->
+        <!-- FAQ -->
          <section id="faq" class="faq-section">
             <div class="container">
                 <div class="faq-header">
@@ -478,7 +469,7 @@
             </div>
         </section>
 
-        <!-- 10. CONTACT SECTION -->
+        <!-- Contact -->
         <section id="contact" class="contact-section">
             <div class="container">
                 <div class="contact-grid">
@@ -495,41 +486,34 @@
                             &emsp;&nbsp;&nbsp;Παρασκευή: 10:00 - 17:00<br>
                             &emsp;&nbsp;&nbsp;Σάββατο - Κυριακή: Κλειστά</li>
                             <li>
-                                <!-- Social Media Links -->
                                 <div class="contact-socials">
                                     <h4>Ακολουθήστε μας</h4>
                                     <div class="social-icons">
-                                        <!-- LinkedIn -->
                                         <a href="#" class="social-btn" aria-label="LinkedIn Profile">
                                             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                                 <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
                                             </svg>
                                         </a>
-                                        <!-- YouTube -->
                                         <a href="#" class="social-btn" aria-label="YouTube Channel">
                                             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                                 <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                                             </svg>
                                         </a>
-                                        <!-- TikTok -->
                                         <a href="#" class="social-btn" aria-label="TikTok Profile">
                                             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                                 <path d="M12.525.229H8.552v16.32a3.854 3.854 0 0 1-3.852 3.852 3.855 3.855 0 0 1-3.852-3.852 3.854 3.854 0 0 1 3.854-3.852c.287 0 .56.033.824.093v-3.99a7.792 7.792 0 0 0-.824-.045 7.844 7.844 0 0 0-7.84 7.846 7.843 7.843 0 0 0 7.84 7.844 7.842 7.842 0 0 0 7.846-7.844V7.129a11.66 11.66 0 0 0 7.03 2.332V5.485a7.772 7.772 0 0 1-4.877-2.615 7.733 7.733 0 0 1-2.023-2.641z"/>
                                             </svg>
                                         </a>
-                                        <!-- X / Twitter -->
                                         <a href="#" class="social-btn" aria-label="X Profile">
                                             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                                             </svg>
                                         </a>
-                                        <!-- Facebook -->
                                         <a href="#" class="social-btn" aria-label="Facebook Page">
                                             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                                 <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.8z"/>
                                             </svg>
                                         </a>
-                                        <!-- Instagram -->
                                         <a href="#" class="social-btn" aria-label="Instagram Profile">
                                             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                                                 <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m4.4 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m4-2.5a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/>
@@ -541,7 +525,6 @@
                         </ul>
                     </div>
                     
-                    <!-- Google Maps Embed -->
                     <div class="contact-map-wrapper">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.601930996086!2d23.74312307639688!3d38.024195397752486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a28ea642cb33%3A0x28d6b350002e3547!2sI.%20Foka%2040%2C%20Athina%20111%2042!5e1!3m2!1sen!2sgr!4v1788603258790!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
@@ -550,7 +533,7 @@
         </section>
     </main>
 
-    <!-- 7. FOOTER -->
+    <!-- Footer -->
     <footer class="main-footer">
         <div class="container footer-container">
             <div class="footer-bottom">
@@ -566,22 +549,19 @@
         </div>
     </footer>
 
-<!-- Left-side Back to Top Button -->
+<!-- Back to top -->
 <button id="backToTopBtn" onclick="scrollToTop()" aria-label="Back to Top">
     <span class="arrow-up">↑</span>
 </button>
 
-<!-- AI Chat Widget - Smart Routing -->
+<!-- AI Chat -->
 <div class="ai-chat-widget">
-    <!-- Floating Button (75% Μέγεθος) -->
     <button class="ai-toggle-btn" onclick="toggleAiChat()" aria-label="Emergency Assistance">
         <span class="ai-icon">🤖</span>
         <span class="ai-pulse"></span>
     </button>
 
-    <!-- Chat Window -->
     <div class="ai-chat-window" id="aiChatWindow">
-        <!-- Header -->
         <div class="ai-chat-header">
             <div class="ai-bot-profile">
                 <div class="ai-avatar">⚖️</div>
@@ -593,14 +573,12 @@
             <button class="ai-close-btn" onclick="toggleAiChat()">&times;</button>
         </div>
 
-        <!-- Body -->
         <div class="ai-chat-body" id="aiChatBody">
-            <!-- Animation Πληκτρολόγησης -->
+
             <div class="ai-typing-indicator" id="aiTyping">
                 <span></span><span></span><span></span>
             </div>
             
-            <!-- ΒΗΜΑ 1: ΚΑΛΩΣΟΡΙΣΜΑ & ΑΡΧΙΚΗ ΕΡΩΤΗΣΗ -->
             <div class="ai-bubble" id="aiWelcomeMessage" style="display:none;">
                 Χαίρετε! Είμαι ο ψηφιακός βοηθός του γραφείου.
                 
@@ -612,14 +590,12 @@
                 <button class="route-btn" onclick="routeUser('existing')">💼 Είμαι ήδη πελάτης</button>
             </div>
 
-            <!-- ΒΗΜΑ 2α: ΑΠΑΝΤΗΣΗ ΓΙΑ ΝΕΟΥΣ ΠΕΛΑΤΕΣ (ΓΡΑΜΜΑΤΕΙΑ) -->
             <div class="ai-bubble ai-reply-bubble" id="aiSecretaryMessage" style="display:none;">
                 Καλώς ήρθατε στο γραφείο μας!
                 
                 Για νέους πελάτες, η αρχική επικοινωνία και ο προγραμματισμός ραντεβού πραγματοποιούνται από τη γραμματεία μας. Παρακαλώ επιλέξτε πώς επιθυμείτε να επικοινωνήσετε μαζί μας:
             </div>
 
-            <!-- ΒΗΜΑ 2β: ΑΠΑΝΤΗΣΗ ΓΙΑ ΥΦΙΣΤΑΜΕΝΟΥΣ ΠΕΛΑΤΕΣ (ΛΙΣΤΑ ΔΙΚΗΓΟΡΩΝ) -->
             <div class="ai-bubble ai-reply-bubble" id="aiLawyerPromptMessage" style="display:none;">
                 Χαιρόμαστε που επικοινωνείτε ξανά μαζί μας!
                 
@@ -660,7 +636,6 @@
                 </button>                
             </div>
 -->
-            <!-- ΒΗΜΑ 3: ΕΠΙΒΕΒΑΙΩΣΗ ΕΠΙΛΟΓΗΣ ΔΙΚΗΓΟΡΟΥ -->
             <div class="ai-bubble ai-reply-bubble" id="aiSelectionMessage" style="display:none;">
                 Υπέροχα! Θα σας συνδέσω με... <strong id="selectedLawyerName">...</strong>. 
                 
@@ -668,7 +643,6 @@
             </div>
         </div>
 
-        <!-- FOOTER ΜΕ ΚΟΥΜΠΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ (Κοινό για Γραμματεία & Δικηγόρους) -->
         <div class="ai-chat-footer" id="aiFooter" style="display:none;">
             <div class="ai-action-buttons">
                 <a href="#" id="viberLink" class="ai-btn ai-viber">
@@ -682,7 +656,6 @@
     </div>
 </div>
 
-    <!-- Main JavaScript File -->
     <script src="../script/script.js"></script>
 </body>
 </html>

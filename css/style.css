@@ -1,31 +1,24 @@
-/* ==========================================================================
-   MASTER LAW FIRM TEMPLATE - OPTIMIZED CORE STYLES
-   ========================================================================== */
-
-/* 1. CONFIGURATION & DESIGN SYSTEM */
+/* Variables */
 :root {
-    /* Χρωματική Παλέτα */
-    --primary-color: #1a2a3a;       /* Navy Blue */
-    --secondary-color: #c5a880;     /* Gold/Bronze */
-    --secondary-hover: #b0936b;     /* Σκούρο χρυσό για hovers */
-    --text-dark: #2c3e50;           /* Βασικό κείμενο */
-    --text-muted: #606f7b;          /* Δευτερεύον κείμενο */
-    --bg-main: #f8fafc;             /* Ξεκούραστο φόντο για όλο το site */
-    --bg-light: #e2e8f0;            /* Ανοιχτό γκρι για εναλλαγή sections */
+    --primary-color: #1a2a3a;
+    --secondary-color: #c5a880;
+    --secondary-hover: #b0936b;
+    --text-dark: #2c3e50;
+    --text-muted: #606f7b;
+    --bg-main: #f8fafc;
+    --bg-light: #e2e8f0;
     --white: #ffffff;
     --border-color: #e2e8f0;
 
-    /* Τυπογραφία */
     --font-headings: 'Playfair Display', Georgia, serif;
     --font-body: 'Inter', system-ui, sans-serif;
     
-    /* Layout */
     --max-width: 1200px;
     --radius: 4px;
     --transition: cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
 }
 
-/* 2. RESET & BASE STYLES */
+/* Base */
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +50,6 @@ a {
     transition: var(--transition);
 }
 
-/* Reusable Utilities */
 .container {
     width: 100%;
     max-width: var(--max-width);
@@ -79,7 +71,7 @@ section {
     scroll-margin-top: 90px;
 }
 
-/* 3. BUTTONS */
+/* Buttons */
 .btn-primary, .btn-secondary {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -120,7 +112,7 @@ section {
     color: var(--primary-color);
 }
 
-/* 4. HEADER & NAVIGATION */
+/* Header */
 .main-header {
     background-color: var(--primary-color);
     color: var(--white);
@@ -211,7 +203,7 @@ section {
     transition: var(--transition);
 }
 
-/* 5. HERO SECTION */
+/* Hero */
 .hero-section {
     background: linear-gradient(rgba(26, 42, 58, 0.7), rgba(26, 42, 58, 0.7)), url('../images/hero-bg.png') center/cover;
     color: var(--white);
@@ -269,7 +261,7 @@ section {
     height: 450px;
 }
 
-/* 6. ABOUT SECTION & SLIDER */
+/* About */
 #about {
     background-color: var(--bg-light);
     color: var(--text-dark);
@@ -295,7 +287,6 @@ section {
     font-weight: 500;
 }
 
-/* Slider Container: Κάθετη διάταξη για να μπουν τα κουμπιά από κάτω */
 .about-slider-container {
     position: relative;
     display: flex;
@@ -303,7 +294,7 @@ section {
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-    gap: 1.5rem; /* Απόσταση μεταξύ slide και βελών */
+    gap: 1.5rem;
 }
 
 .about-slides-wrapper {
@@ -330,7 +321,6 @@ section {
     transform: translateX(0);
 }
 
-/* Νέος περιέκτης για τα βελάκια κάτω από το slide */
 .slider-controls {
     display: flex;
     align-items: center;
@@ -339,7 +329,6 @@ section {
     width: 100%;
 }
 
-/* Επαναφορά κουμπιών σε σχετική θέση (όχι absolute πάνω στο slide) */
 .slider-btn {
     position: relative;
     top: auto;
@@ -372,7 +361,7 @@ section {
     right: auto;
 }
 
-/* 7. ADVANTAGES SECTION */
+/* Adv */
 .advantages-section {
     background-color: var(--primary-color);
     color: var(--white);
@@ -426,7 +415,7 @@ section {
     line-height: 1.6;
 }
 
-/* 8. SERVICES SECTION */
+/* Services */
 .services-section {
     background-color: var(--bg-light);
 }
@@ -450,7 +439,6 @@ section {
     max-width: calc(25% - 1.5rem);
 }
 
-/* QUANTITY QUERIES */
 .service-card:first-child:nth-last-child(3),
 .service-card:first-child:nth-last-child(3) ~ .service-card {
     flex: 1 1 calc(33.333% - 2rem);
@@ -480,7 +468,7 @@ section {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-/* 9. PROCESS SECTION */
+/* Process */
 .process-section {
     background-color: var(--primary-color);
 }
@@ -534,53 +522,7 @@ section {
     color: #e2e8f0;
 }
 
-/* 10. BLOG SECTION */
-.blog-section {
-    background-color: var(--bg-light);
-}
-
-.section-header-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 3rem;
-}
-
-.blog-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-}
-
-.blog-card {
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.blog-meta {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 0.8rem;
-}
-
-.blog-card h3 {
-    font-family: var(--font-headings);
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-.blog-card h3:hover {
-    color: var(--secondary-hover);
-}
-
-.blog-card p {
-    color: var(--text-muted);
-}
-
-/* 11. FAQ SECTION */
+/* FAQ */
 .faq-section {
     background-color: var(--primary-color);
 }
@@ -656,7 +598,7 @@ section {
     font-size: 0.95rem;
 }
 
-/* 12. CONTACT SECTION & MAP */
+/* Contact */
 .contact-section {
     background-color: var(--bg-light);
 }
@@ -791,7 +733,7 @@ section {
     filter: grayscale(0) contrast(1) opacity(1);
 }
 
-/* 13. TESTIMONIALS SECTION */
+/* Reviews */
 .testimonials-section {
     background-color: var(--bg-light);
 }
@@ -846,7 +788,7 @@ section {
     margin-top: 0.2rem;
 }
 
-/* 14. STATS COUNTER STYLING */
+/* Stats */
 .stats-counter-section {
     margin: 4rem 0; 
 }
@@ -904,7 +846,7 @@ section {
     font-weight: 500;
 }
 
-/* 15. FOOTER */
+/* Footer */
 .main-footer {
     background-color: var(--primary-color);
     color: rgba(255, 255, 255, 0.7);
@@ -929,7 +871,7 @@ section {
     color: var(--secondary-color);
 }
 
-/* 16. LEGAL PAGES & UTILITIES */
+/* Legal */
 .about-image-wrapper {
     display: flex;
     justify-content: center;
@@ -979,7 +921,7 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* 17. LANGUAGE SWITCHER */
+/* Lang Switcher */
 .lang-switcher {
     display: flex;
     align-items: center;
@@ -1004,7 +946,7 @@ section {
     opacity: 0.9;
 }
 
-/* 18. GLOBAL COLOR CONTRAST OVERRIDES */
+/* Overides */
 #about .section-subtitle,
 .services-section .section-subtitle,
 .blog-section .section-subtitle,
@@ -1041,7 +983,7 @@ section {
     color: var(--secondary-color);
 }
 
-/* 19. BACK TO TOP BUTTON */
+/* Back to top */
 #backToTopBtn {
     position: fixed;
     top: 50%;
@@ -1086,7 +1028,7 @@ section {
     transform: translateY(-1px);
 }
 
-/* 20. CUSTOM GLOBAL SCROLLBAR */
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -1127,7 +1069,7 @@ section {
     background-color: var(--secondary-color);
 }
 
-/* 21. AI CHAT WIDGET */
+/* Chat widget */
 .ai-chat-widget {
     position: fixed;
     bottom: 30px;
@@ -1348,94 +1290,11 @@ section {
     transform: translateX(3px);
 }
 
-/* 22. GALACTIC BADGE */
-.sub-footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: #05101e;
-}
+/* Responsive */
 
-.copyright-text {
-    font-size: 12px;
-    color: #64748b;
-    margin: 0;
-}
-
-.galactic-badge {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 6px 12px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 6px;
-    user-select: none;
-    cursor: help;
-    transition: all 0.3s ease;
-}
-
-.galactic-badge:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(147, 197, 253, 0.3);
-    transform: translateY(-1px);
-}
-
-.galactic-emblem {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.emblem-ring {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1.5px dashed rgba(147, 197, 253, 0.4);
-    border-radius: 50%;
-    animation: orbit 20s linear infinite;
-}
-
-.emblem-star {
-    font-size: 12px;
-    color: #93c5fd;
-    animation: holo-glow 2s ease-in-out infinite alternate;
-}
-
-.galactic-text {
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.badge-title { font-size: 8px; font-weight: 700; color: #94a3b8; }
-.badge-sub { font-size: 9px; font-weight: 500; color: #cbd5e1; }
-
-@keyframes orbit {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-@keyframes holo-glow {
-    from { opacity: 0.5; filter: drop-shadow(0 0 1px #93c5fd); }
-    to { opacity: 1; filter: drop-shadow(0 0 4px #93c5fd); }
-}
-
-/* ==========================================================================
-   23. RESPONSIVE MEDIA QUERIES
-   ========================================================================== */
-
-/* 1. Hamburger Menu Activation & Mobile Navigation (1400px & κάτω) */
 @media (max-width: 1400px) {
     .menu-toggle {
-        display: flex !important; /* Εμφάνιση των 3 γραμμών */
+        display: flex !important; 
     }
     
     .main-nav {
@@ -1464,13 +1323,11 @@ section {
     }
 }
 
-/* 2. Slider Controls Adjustment */
 @media (max-width: 1280px) {
     .prev-btn { left: -20px; }
     .next-btn { right: -20px; }
 }
 
-/* 3. Tablets & Medium Screens */
 @media (max-width: 992px) {
     h2 { font-size: 1.8rem; }
     .hero-content h1 { font-size: 2.5rem; }
@@ -1507,7 +1364,6 @@ section {
     }
 }
 
-/* 4. Small Tablets & Landscape Phones */
 @media (max-width: 900px) {
     .blog-grid, .footer-container, .hero-actions {
         grid-template-columns: 1fr;
@@ -1528,14 +1384,13 @@ section {
     }
 }
 
-/* 5. Mobile Devices */
 @media (max-width: 480px) {
     .stats-counter-container {
         grid-template-columns: 1fr;
     }
 }
 
-/* 5. HERO SECTION - LOGO STYLING */
+/* Hero Logo */
 .hero-logo-wrapper {
     display: flex;
     justify-content: center;
@@ -1547,9 +1402,8 @@ section {
 .hero-logo-img {
     max-width: 100%;
     height: auto;
-    max-height: 380px; /* Προσαρμόστε το ύψος ανάλογα με το μέγεθος του logo σας */
+    max-height: 380px; 
     object-fit: contain;
-    /* Προαιρετικά: Διακριτικό εφέ λάμψης/σκιάς αν το φόντο είναι σκούρο */
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.25));
     transition: transform 0.4s ease;
 }
@@ -1565,38 +1419,35 @@ section {
     }
 
     .hero-logo-wrapper {
-        order: -1; /* Εμφανίζει το logo πάνω από το κείμενο στις μικρές οθόνες (προαιρετικό) */
+        order: -1;
         margin-bottom: 1.5rem;
     }
 
     .hero-logo-img {
-        max-height: 220px; /* Μικρότερο μέγεθος για κινητά/tablets */
+        max-height: 220px;
     }
 }
 
-/* Styling για το σύνδεσμο του Developer στο Footer */
 .developer-credit a {
-    color: var(--secondary-color); /* Χρησιμοποιεί το χρυσό/χάλκινο χρώμα του θέματος */
+    color: var(--secondary-color);
     font-weight: 600;
     text-underline-offset: 3px;
     transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .developer-credit a:hover {
-    color: var(--white); /* Αλλάζει σε λευκό όταν περνάει το ποντίκι */
+    color: var(--white);
     opacity: 0.9;
 }
 
-/* ==========================================================================
-   GOOGLE REVIEWS BUTTON STYLING
-   ========================================================================== */
+/* Google */
 .more-reviews-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 2.5rem;
-    grid-column: 1 / -1; /* Εξασφαλίζει ότι αν βρίσκεται μέσα σε Grid, θα καταλάβει όλο το πλάτος */
+    grid-column: 1 / -1;
 }
 
 .google-reviews-btn {
@@ -1623,42 +1474,34 @@ section {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Εικονίδιο Google */
 .google-reviews-btn i {
     font-size: 1.15rem;
     color: var(--secondary-color);
     transition: color 0.3s ease;
 }
 
-/* Αλλαγή χρώματος εικονιδίου στο Hover */
 .google-reviews-btn:hover i {
     color: var(--primary-color);
 }
 
 .ai-call {
-    background-color: #2e7d32; /* Πράσινο κλήσεων */
+    background-color: #2e7d32;
 }
 
 .ai-call:hover {
     background-color: #1b5e20;
 }
 
-/* ==========================================================================
-   ABOUT SLIDER NAVIGATION FIX
-   ========================================================================== */
-
-/* Περιέκτης για τα βελάκια: Οριζόντια τοποθέτηση (το ένα δίπλα στο άλλο) */
 .slider-controls {
     display: flex;
-    flex-direction: row; /* Εξασφαλίζει οριζόντια διάταξη */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Απόσταση μεταξύ των δύο κουμπιών */
+    gap: 15px;
     width: 100%;
-    margin-top: 15px; /* Απόσταση από το slide */
+    margin-top: 15px;
 }
 
-/* Κουμπιά πλοήγησης */
 .slider-btn {
     position: relative;
     top: auto;
@@ -1685,14 +1528,12 @@ section {
     color: var(--white);
 }
 
-/* Καθαρισμός παλιών absolute positions */
 .prev-btn,
 .next-btn {
     left: auto;
     right: auto;
 }
 
-/* Για μεγάλες οθόνες (Desktop ≥ 992px): Τα κουμπιά μπαίνουν αριστερά & δεξιά */
 @media (min-width: 992px) {
     .about-slider-container {
         position: relative;
@@ -1705,11 +1546,11 @@ section {
         right: 0;
         transform: translateY(-50%);
         justify-content: space-between;
-        pointer-events: none; /* Επιτρέπει τα clicks στο περιεχόμενο από κάτω */
+        pointer-events: none;
         margin-top: 0;
     }
 
     .slider-controls .slider-btn {
-        pointer-events: auto; /* Επαναφέρει τα clicks στα κουμπιά */
+        pointer-events: auto; 
     }
 }

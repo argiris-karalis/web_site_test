@@ -1,8 +1,4 @@
-/* ==========================================================================
-   LAW FIRM INTERACTIVE FUNCTIONS - OPTIMIZED SCRIPT
-   ========================================================================== */
-
-// 1. MOBILE HAMBURGER MENU
+// Hamburger
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -38,7 +34,7 @@ if (menuToggle && mainNav) {
     }
 }
 
-// 2. ABOUT TEAM SLIDER
+// About
 const slides = document.querySelectorAll('.about-slide');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -55,7 +51,7 @@ if (slides.length > 0 && prevBtn && nextBtn) {
     prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
 }
 
-// 3. BACK TO TOP BUTTON
+// Back to top
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -80,7 +76,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// 4. ANIMATION ΜΕΤΡΗΤΗ
+// Animation
 const animateCounters = () => {
     const counters = document.querySelectorAll('.stat-number');
     const duration = 2000;
@@ -123,10 +119,9 @@ if (statsSection) {
     observer.observe(statsSection);
 }
 
-// 5. AI CHAT WIDGET & ROUTING
+// AI Chat
 let isBotTyped = false;
 
-// Τηλέφωνο Γραμματείας (μορφή: 3069XXXXXXXX)
 const SECRETARY_PHONE = "306900000000"; 
 
 function toggleAiChat() {
@@ -179,7 +174,6 @@ function selectLawyer(name, phoneNumber) {
     autoScroll();
 }
 
-// Helper για την ενημέρωση των συνδέσμων Viber & Τηλεφώνου
 function updateContactLinks(phone) {
     const viberBtn = document.getElementById('viberLink');
     const callBtn = document.getElementById('callLink');
@@ -201,7 +195,7 @@ function autoScroll() {
     }
 }
 
-// 6. CURRENT YEAR FOOTER AUTO-UPDATE
+// Year
 const currentYearSpan = document.getElementById('current-year');
 if (currentYearSpan) {
     currentYearSpan.textContent = new Date().getFullYear();
